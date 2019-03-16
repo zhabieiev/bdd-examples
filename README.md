@@ -23,11 +23,3 @@ This template was created to demonstrate BDD principles which advocates writing 
 ## Running the Test Suite
 
 In the project directory run `mvn test`. The suite will attempt to run against a web-app deployed on `http://localhost:8080/` by default. This can be overridden at run-time by specifying a system property `-DBASE_WEB_APP_URL=` or modifying the `getBaseAppUrl()` method in `BaseStepDefinition`
-
-
-## Suggestions for Extending the Suite
-
- - Incorporate DI into the project (e.g. [cucumber-spring](https://github.com/cucumber/cucumber-jvm/tree/master/spring)) - use this to set the location of the base app URL at runtime
- - Implement test parallelism with the [cucumber-jvm-parallel plugin](https://github.com/temyers/cucumber-jvm-parallel-plugin)
- - Integrate with [Fabric8](http://fabric8.io/guide/getStarted/index.html) and run tests against a docker container containing your web app
- - Integrate tests into a CI / CD pipeline
